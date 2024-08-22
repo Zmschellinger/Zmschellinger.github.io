@@ -1,4 +1,17 @@
-title: Zachary Schellinger
-#logo:P
-#description
+title: 'Zachs Portfolio'
+description: "This is Zachary Schellinger's web portfolio!"
 remote_theme: b2a3e8/jekyll-theme-console
+
+header_pages: 
+  - index.md
+  - home.md
+  - education.md
+  - expirence.md
+  - github.md
+  - whoami.md
+
+# Build settings
+markdown: kramdown
+style: dark
+listen_for_clients_preferred_style: true
+ 
