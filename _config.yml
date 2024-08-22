@@ -5,9 +5,6 @@ remote_theme: b2a3e8/jekyll-theme-console
 header_pages: 
   - index.md
   - home.md
-  - education.md
-  - expirence.md
-  - github.md
   - whoami.md
 
 # Build settings
