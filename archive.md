@@ -4,4 +4,6 @@ layout: page
 permalink: /archive
 ---
 
-# Archived write ups and completed projects
+# Archive 
+
+This is where I keep old write-ups and completed projects.
