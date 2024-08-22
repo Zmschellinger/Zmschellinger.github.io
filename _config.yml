@@ -6,6 +6,9 @@ header_pages:
   - index.md
   - contact.md
   - whoami.md
+  - projects.md
+  - writeups.md
+  - archive.md
 
 # Build settings
 markdown: kramdown
