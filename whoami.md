@@ -1,2 +1,8 @@
+---
+title: /WhoAmI
+layout: page
+permalink: /whoami
+---
 
-this is whoami
+# who am i? 
+im a dude
