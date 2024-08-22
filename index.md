@@ -5,6 +5,6 @@ permalink: /
 ---
 
 
-# Welcome
+# Welcome to Zach's Portfolio
 
-some stuff
+Hi! This is where I keep all of my projects, write ups, and basic information about me.  
