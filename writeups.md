@@ -8,5 +8,5 @@ permalink: /writeups
 
 This is where I keep my most recent write ups.
 
-> [TryHackMe Wonderland](https://github.com/Zmschellinger/Writeups/blob/main/THM/Wonderland)
+1. [TryHackMe Wonderland](https://github.com/Zmschellinger/Writeups/blob/main/THM/Wonderland)
 
