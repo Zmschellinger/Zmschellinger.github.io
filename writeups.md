@@ -1,5 +1,5 @@
 ---
-title: /writeUps
+title: /writeups
 layout: page
 permalink: /writeups
 ---
