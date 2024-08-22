@@ -4,7 +4,8 @@ title: /contact
 permalink: /contact/
 ---
 
-# this is contact information 
+# Contact Information
+If you have any questions about me or my profile please reach out!
 Email - Zmschellinger@gmail.com
 Phone - 803-716-7239
 ## Social Media
