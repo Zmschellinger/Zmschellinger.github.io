@@ -1,7 +1,7 @@
 ---
+title: Contact
 layout: page
-title: /contact
-permalink: /contact/
+permalink: /contact
 ---
 
 # Contact Information
