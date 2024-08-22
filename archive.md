@@ -1,7 +1,7 @@
 ---
-title: archive
+title: /archive
 layout: page
-permalink: /contact
+permalink: /archive
 ---
 
 # Archived write ups and completed projects
