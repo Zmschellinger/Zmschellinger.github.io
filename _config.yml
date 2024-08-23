@@ -8,7 +8,7 @@ header_pages:
   - whoami.md
   - projects.md
   - writeups.md
-  - archive.md
+  - tools.md
 
 # Build settings
 markdown: kramdown
