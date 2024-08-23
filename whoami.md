@@ -28,6 +28,8 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
         - Kali linux, Bash, Python, Wireshark, TCPDump, MITRE ATT&CK,
           Burpsuit, Metasploit, Ghidra, Java, Splunk, Binwalk, Autospy, Volatillity.
 - Research intern, Army Cyber Institute (JUL 2022 - AUG 2022)
-        - Performed research on the application of blockchain technoloyg in the U.S Military.
-        - Hyperledger fabric, SIM, Linux, Docker, Windows 11, Literary analysis, Writing, Presentation.
+        - Performed research on the application of blockchain technoloyg in
+          the U.S Military.
+        - Hyperledger fabric, SIM, Linux, Docker, Windows 11, Literary analysis,
+          Writing, and Presentation.
 ```
