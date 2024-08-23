@@ -6,16 +6,13 @@ permalink: /contact
 
 
 # Contact Information
-Email - Zmschellinger@gmail.com
-Phone - (803)716-7239
-
 [Linkedin](https://www.linkedin.com/in/zach-schellinger)  [Github](https://github.com/Zmschellinger)
 
 ```
-      _________
-    .`.        `.
-   /   \ .======.\
-   |   | |______||
+      _________            
+    .`.        `.    Email - Zmschellinger@gmail.com        
+   /   \ .======.\   Phone - (803)716-72
+   |   | |______||   
    |   |   _____ |
    |   |  /    / |
    |   | /____/  |
