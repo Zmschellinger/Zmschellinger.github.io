@@ -1,1 +1,7 @@
-this is hwere i keep tools i like to use
+---
+title: /tools
+layout: page
+permalink: /tools
+---
+
+this is where i keep tools i like to use
