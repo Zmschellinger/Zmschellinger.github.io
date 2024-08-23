@@ -6,4 +6,4 @@ permalink: /writeups
 # Write-ups
 
 1. [TryHackMe Wonderland](/writeups/thm/wonderland.md)
-2. [SOC Analyst Path](/writeups/htb/SOCAnalystPath.md)
+2. [SOC Analyst Path](/writeups/htb/SOCanalystpath.md)
