@@ -12,7 +12,7 @@ nmap -A 10.10.97.29
 ```
 http://10.10.97.29/r/a/b/b/i/t/
 ```
-### Next I inspected the webpage for more information and found what looks to be like credentials for alice.
+### Next I inspected the webpage for more information and found what looks to be credentials for alice.
 ```
 alice:HowDothTheLittleCrocodileImproveHisShiningTail
 ```
