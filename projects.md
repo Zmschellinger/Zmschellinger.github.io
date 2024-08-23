@@ -10,4 +10,4 @@ permalink: /projects
 This is where I keep the the projects I am currently working on
 
 1. [My web portfolio](/webportfolio.md)
-2. [Malware game](/malwaregame)
+2. [Malware game](/malwaregame.md)
