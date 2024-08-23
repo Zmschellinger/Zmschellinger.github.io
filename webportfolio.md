@@ -27,3 +27,18 @@ This is what my _config.yml looks like.
 >markdown: kramdown
 >style: dark
 >listen_for_clients_preferred_style: true
+
+#4 Create webpages and link them to your home page
+As you may have noticed, my _config.yml file contains a header_pages section that included the name of each webpage file. These files are coded in markdown but it is possible to code them in HTML as well. Once you are here its just rinse and repeat! This is what my projects page looks like just to show how I coded in the links. This [list](https://www.markdownguide.org/basic-syntax/#lists-1) of markdown basics was immensely helpful when creating these pages. 
+
+>---
+>title: /projects
+>layout: page
+>permalink: /projects
+>---
+>
+># Projects
+>
+>This is where I keep the projects I am currently working on.
+>1. '[My web protfolio](/webportfolio.md)
+>2. '[Malware game](/malwaregame.md)
