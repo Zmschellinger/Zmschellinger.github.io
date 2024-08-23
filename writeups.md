@@ -5,5 +5,5 @@ permalink: /writeups
 ---
 # Write-ups
 
-1. [TryHackMe Wonderland](/wonderland)
+1. [TryHackMe Wonderland](/wonderland.md)
 
