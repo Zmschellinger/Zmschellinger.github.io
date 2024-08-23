@@ -8,7 +8,8 @@ permalink: /whoami
 I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees in Computer Science and Cyber Operations. I am seeking a challenging position where 3+ years of experience defending and penetrating networks in a competition environment can be fully utilized.
 
 
-## Education 
+# Education 
+```
 + The Citadel, Military College of South Carolina (AUG 2020 - MAY 2024)
       + B.S Cyber Operations & Computer Science
 + Johns Hopkins, Whiting School of Engineering (AUG 2024 - PRES.)
@@ -16,8 +17,9 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
 + CompTIA
       + Security+
       + CompTIA ID: COMP001022256841
-
-## Expirence
+```
+# Expirence
+```
 - System Admin, OSAVVA (AUG 2024 - PRES.)
         - Managed incidents involving VMware VSphere and ESXi hosts.
         - VMWare Vsphere, Commvault, Remedy, ServiceNow.  
@@ -27,3 +29,4 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
 - Research intern, Army Cyber Institute (JUL 2022 - AUG 2022)
         - Performed research on the application of blockchain technoloyg in the U.S Military.
         - Hyperledger fabric, SIM, Linux, Docker, Windows 11, Literary analysis, Writing, Presentation.
+```
