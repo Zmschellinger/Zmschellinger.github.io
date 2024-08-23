@@ -10,13 +10,13 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
 
 # Education 
 ```
-+ The Citadel, Military College of South Carolina (AUG 2020 - MAY 2024)
-      + B.S Cyber Operations & Computer Science
-+ Johns Hopkins, Whiting School of Engineering (AUG 2024 - PRES.)
-      + M.S Cyber Security, focus in Space Cyber
-+ CompTIA
-      + Security+
-      + CompTIA ID: COMP001022256841
+- The Citadel, Military College of South Carolina (AUG 2020 - MAY 2024)
+      - B.S Cyber Operations & Computer Science
+- Johns Hopkins, Whiting School of Engineering (AUG 2024 - PRES.)
+      - M.S Cyber Security, focus in Space Cyber
+- CompTIA
+      - Security+
+      - CompTIA ID: COMP001022256841
 ```
 # Expirence
 ```
