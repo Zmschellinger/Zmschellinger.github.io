@@ -11,37 +11,37 @@ Create a new file named _config.yml. From here you can choose what theme you wou
 
 This is what my _config.yml looks like.
 
->title: 'Zachs Portfolio'
+>\title: 'Zachs Portfolio'
 >
->description: "This is Zachary Schellinger's web portfolio!"
+>\description: "This is Zachary Schellinger's web portfolio!"
 >
->remote_theme: b2a3e8/jekyll-theme-console
+>\remote_theme: b2a3e8/jekyll-theme-console
 >
->header_pages: 
->  - index.md
->  - contact.md
->  - whoami.md
->  - projects.md
->  - writeups.md
->  - archive.md
+>\header_pages: 
+>\  - index.md
+>\  - contact.md
+>\  - whoami.md
+>\  - projects.md
+>\  - writeups.md
+>\  - archive.md
 >
-># Build settings
->markdown: kramdown
->style: dark
->listen_for_clients_preferred_style: true
+>\# Build settings
+>\markdown: kramdown
+>\style: dark
+>\listen_for_clients_preferred_style: true
 
 #4 Create webpages and link them to your home page
 As you may have noticed, my _config.yml file contains a header_pages section that included the name of each webpage file. These files are coded in markdown but it is possible to code them in HTML as well. Once you are here its just rinse and repeat! This is what my projects page looks like just to show how I coded in the links. This [list](https://www.markdownguide.org/basic-syntax/#lists-1) of markdown basics was immensely helpful when creating these pages. 
 
->---
+>\---
 >
->title: /projects
+>\title: /projects
 >
->layout: page
+>\layout: page
 >
->permalink: /projects
+>\permalink: /projects
 >
->---
+>\---
 >
 >\# Projects
 >
