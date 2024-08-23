@@ -9,6 +9,7 @@ nmap -A 10.10.97.29
 <p><span style="color:blue"><em>nmap -A 10.10.97.29</em></span></p
                                                                  >
 ### With this scan we found that port 22 (ssh) and 80 (HTTP) are open. My next step was to curl the webpage to see if that would revel any vulnerabilities, it did not. Never fear, the next thing I did was run dirbuster on the webpage. Eventully I run down the web directories to: 
+
 ```
 http://10.10.97.29/r/a/b/b/i/t/
 ```
