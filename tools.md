@@ -16,8 +16,6 @@ permalink: /tools
 
 Shout out to [CyberGuide.me](https://github.com/cyberguideme) for exposing me to these tools. 
 
-[Frameworks](#Frameworks) [Cryptography](#Cryptography)
-
 ### Frameworks
 
 * [Metasploit](https://www.metasploit.com/) - Software for offensive security teams to help verify vulnerabilities and manage security assessments.
