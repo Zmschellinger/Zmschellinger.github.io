@@ -40,5 +40,5 @@ As you may have noticed, my _config.yml file contains a header_pages section tha
 ># Projects
 >
 >This is where I keep the projects I am currently working on.
->1. '[My web protfolio](/webportfolio.md)
->2. '[Malware game](/malwaregame.md)
+>1. \[My web protfolio](/webportfolio.md)
+>2. \[Malware game](/malwaregame.md)
