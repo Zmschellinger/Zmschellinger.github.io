@@ -44,3 +44,5 @@ As you may have noticed, my _config.yml file contains a header_pages section tha
 >This is where I keep the projects I am currently working on.
 >1. \[My web protfolio](/webportfolio.md)
 >2. \[Malware game](/malwaregame.md)
+
+If you have any questions about this please dont hesitate to reach out!
