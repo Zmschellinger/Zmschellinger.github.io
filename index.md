@@ -18,7 +18,7 @@ permalink: /
              |   |                                         |    |
              |   |   "Only those who will risk going too   |    |
              |   |     far can possibly find out how far   |    |
-             |   |        one can go     - T.S Elliot      |    |
+             |   |        one can go."   - T.S Elliot      |    |
              |   |                                         |    |
              |   |_________________________________________|    |
              |                                                  |
