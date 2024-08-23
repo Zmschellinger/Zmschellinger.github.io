@@ -5,7 +5,7 @@ I first got this idea after wondering around Github and running accross [fmash.1
 # 1. Create a Github account
 If you dont already, make sure you have a Github account
 # 2. Create a repository
-Create a repository name xxxx.github.io, where xxxx is your Github username. 
+Create a repository named xxxx.github.io, where xxxx is your Github username. 
 # 3. Create _config.yml
 Create a new file named _config.yml. From here you can choose what theme you would like for your website and give it a title. Shout out to [b2a3e8/jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) for the awesome theme they created. 
 
