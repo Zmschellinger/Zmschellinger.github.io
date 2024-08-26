@@ -2,7 +2,7 @@
 
 ## Objectives - Find the flag in user.txt and root.txt
 
-### I started by running a basic nmap scan on the target IP address
+I started by running a basic nmap scan on the target IP address
 
 <p><span style="color:red"><em>nmap -A 10.10.97.29</em></span></p>
 
@@ -10,15 +10,15 @@
 
 <p><span style="color:red"><em>http://10.10.97.29/r/a/b/b/i/t/</em></p>
 
-### Next I inspected the webpage for more information and found what looks to be credentials for alice.
+Next I inspected the webpage for more information and found what looks to be credentials for alice.
 
 <p><span style="color:red"><em>alice:HowDothTheLittleCrocodileImproveHisShiningTail</em></span></p>
 
-### Next Im going to try those credentials to access the SSH server. 
+Next Im going to try those credentials to access the SSH server. 
 
 <p><span style="color:red"><em>ssh alice@10.10.97.29</em></span></p>
 
-### Im in!! The first thing we see once we log into alices computer is root.txt and a .py file. The Python file is below:
+Im in!! The first thing we see once we log into alices computer is root.txt and a .py file. The Python file is below:
 
 
 ```
