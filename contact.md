@@ -9,7 +9,7 @@ permalink: /contact
 ```
       _________            
     .`.        `.    Email - Zmschellinger@gmail.com        
-   /   \ .======.\   Phone - (803)716-72
+   /   \ .======.\   Phone - (803)716-7239
    |   | |______||   
    |   |   _____ |
    |   |  /    / |
