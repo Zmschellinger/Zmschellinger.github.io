@@ -5,7 +5,7 @@ permalink: /projects
 ---
 
 # Projects 
-
+```
  __,_,
   [_|_/ 
    //
@@ -18,7 +18,7 @@ permalink: /projects
      (--/\--)    \__/
      _)(  )(_
     `---''---`
-    
+ ```   
 This is where I keep the the projects I am currently working on
 
 1. [My web portfolio](/projects/webportfolio.md)
