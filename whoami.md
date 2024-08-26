@@ -33,3 +33,5 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
         - Hyperledger fabric, SIM, Linux, Docker, Windows 11, Literary analysis,
           Writing, and Presentation.
 ```
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/Zmschellinger.png" alt="TryHackMe">
