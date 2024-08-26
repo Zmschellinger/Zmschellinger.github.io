@@ -19,4 +19,3 @@ permalink: /contact
    `` |||      |||
       `"`      `"
 ```
-[Linkedin](https://www.linkedin.com/in/zach-schellinger)  [Github](https://github.com/Zmschellinger)
