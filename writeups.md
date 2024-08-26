@@ -7,5 +7,6 @@ permalink: /writeups
 
 1. [TryHackMe Wonderland](/writeups/thm/wonderland.md)
 2. [SOC Analyst Path](/writeups/htb/SOCanalystpath.md)
-3. [Cyber Defense Framework(/writups/thm/SOC Level 1 Path/Cyber Defense Framework)
-4. 
+3. [Cyber Defense Framework](/writeups/thm/SOC1Path/CDF.md)
+4. [Pyramid of Pain](/writeups/thm/SOC1Path/PoP.md)
+6. 
