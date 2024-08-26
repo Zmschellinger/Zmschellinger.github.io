@@ -21,7 +21,10 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
 ```
 - System Admin, OSAVVA (AUG 2024 - PRES.)
         - Managed incidents involving enterprise level cloud hosts.
-        - VMWare Vsphere, Commvault, Remedy, ServiceNow.  
+        - VMWare Vsphere, Commvault, Remedy, ServiceNow.
+- Cyber Warfare Officer, VAANG (AUG 2024 - PRES.)
+        - Perform training relating to cyber warfare operations and incident response.
+        - Security onion, more coming soon.  
 - Cyber Team, The Citadel (OCT 2020 - MAY 2024)
         - Individually and collaboratively competed in cyber security competitions.
         - Kali linux, Bash, Python, Wireshark, TCPDump, MITRE ATT&CK,
@@ -32,8 +35,5 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
         - Hyperledger fabric, SIM, Linux, Docker, Windows 11, Literary analysis,
           Writing, and Presentation.
 ```
-
-[![TryHackMe](/images/thm.png)](https://tryhackme.com/p/Zmschellinger){:target="_blank"}
-
 
 
