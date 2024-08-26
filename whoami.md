@@ -21,7 +21,7 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
 # Expirence
 ```
 - System Admin, OSAVVA (AUG 2024 - PRES.)
-        - Managed incidents involving VMware VSphere and ESXi hosts.
+        - Managed incidents involving enterprise level cloud hosts.
         - VMWare Vsphere, Commvault, Remedy, ServiceNow.  
 - Cyber Team, The Citadel (OCT 2020 - MAY 2024)
         - Individually and collaboratively competed in cyber security competitions.
