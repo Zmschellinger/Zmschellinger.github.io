@@ -10,6 +10,8 @@ header_pages:
   - writeups.md
   - tools.md
 
+footer: 'Find me on <a href="https://www.linkedin.com/in/zach-schellinger">LinkedIn</a> or <a href="https://github.com/Zmschellinger">GitHub</a>'
+
 # Build settings
 markdown: kramdown
 style: dark
