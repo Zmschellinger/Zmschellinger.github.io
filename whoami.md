@@ -33,3 +33,7 @@ I am a self-driven, motivated, STEM graduate of The Citadel, with dual degrees i
           Writing, and Presentation.
 ```
 
+[![TryHackMe](/images/thm.png)](https://tryhackme.com/p/Zmschellinger){:target="_blank"}
+
+
+
