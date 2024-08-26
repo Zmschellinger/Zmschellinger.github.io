@@ -14,4 +14,4 @@ This is where I keep the the projects I am currently working on
 4. [File Integrety Monitor](/projects/fim.md)
 5. [Key Logger](/projects/kl.md)
 6. [Simple RestAPI](/projects/restapi.md)
-7. [Vulnerabilty Management Logger]
+7. [Vulnerabilty Management Lab](/projects/vml.md)
