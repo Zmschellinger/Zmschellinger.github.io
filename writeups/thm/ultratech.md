@@ -71,7 +71,9 @@ PORT     STATE SERVICE VERSION
 |_http-title: Site doesn't have a title (text/html; charset=utf-8).
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
 Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Aggressive OS guesses: Linux 3.13 (97%), Linux 3.8 (96%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 3.16 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (92%), Linux 3.10 (92%), Linux 3.19 (92%), Linux 3.2 - 4.8 (92%)
+Aggressive OS guesses: Linux 3.13 (97%), Linux 3.8 (96%), ASUS RT-N56U WAP (Linux 3.4) (95%),
+Linux 3.16 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (92%),
+Linux 3.10 (92%), Linux 3.19 (92%), Linux 3.2 - 4.8 (92%)
 No exact OS matches for host (test conditions non-ideal).
 Network Distance: 1 hop
 
@@ -84,8 +86,10 @@ From this we can see there are 2 Rest api's; _http-cors, and _http-title.
 ## Part 2 - Explotation
 
 ### There is a database lying around, what is its filename?
-- To start off, I opened my web browser and went to http://10.10.208.199:8081. The only thing to pop up is UltraTech API v0.1.3, which might be vulnerable. Im going to look at the other port before attempting to exploit this one.
-- When looking at http://10.10.208.199:31331, we find a somewhat sophisticated looking webpage. Upon futher inspection on the Aboutus page we find a list of potential users
+- To start off, I opened my web browser and went to http://10.10.208.199:8081. The only thing to pop up is
+  UltraTech API v0.1.3, which might be vulnerable. Im going to look at the other port before attempting to exploit this one.
+- When looking at http://10.10.208.199:31331, we find a somewhat sophisticated looking webpage.
+  Upon futher inspection on the Aboutus page we find a list of potential users
 
 ```.sh
 John McFamicom | r00t
