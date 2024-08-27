@@ -101,7 +101,6 @@ Alvaro Squalo | Sq4l
 
 
 <div style="background-color: gray; padding: 20px; border-radius: 5px; color: white;">
-    <h2>Nmap Scan Results</h2>
     <pre>
         # Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
         Nmap scan report for 192.168.1.1
