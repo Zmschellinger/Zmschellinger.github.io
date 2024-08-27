@@ -119,6 +119,19 @@ Alvaro Squalo | Sq4l
     ">
 
 
-
+<p><span style="color:red"><em>
+        # Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
+        Nmap scan report for 192.168.1.1
+        Host is up (0.0010s latency).
+        Not shown: 999 closed ports
+        PORT     STATE SERVICE
+        22/tcp open  ssh
+        80/tcp open  http
+        Nmap scan report for 192.168.1.2
+        Host is up (0.0020s latency).
+        Not shown: 999 closed ports
+        PORT     STATE SERVICE
+        53/tcp open  domain
+</em></span></p>
   
 
