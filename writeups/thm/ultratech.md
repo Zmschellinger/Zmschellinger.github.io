@@ -1,4 +1,4 @@
-#TryHackMe UltraTech writeup - Medium
+# TryHackMe UltraTech writeup - Medium
 The basics of pentration testing, enumeration, privlilege escaltion, and webapp testing
 
 ## Part 1 - Enumeration
