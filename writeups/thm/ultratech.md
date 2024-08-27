@@ -110,13 +110,12 @@ Alvaro Squalo | Sq4l
         PORT     STATE SERVICE
         22/tcp open  ssh
         80/tcp open  http
-
         Nmap scan report for 192.168.1.2
         Host is up (0.0020s latency).
         Not shown: 999 closed ports
         PORT     STATE SERVICE
         53/tcp open  domain
-        </pre>
+     </pre>
 </div>
 
 
