@@ -34,7 +34,7 @@ From this we can see that the software running is Node.js.
 
 ### Which other Non-standard port is used?
 - To find this, I ran an nmap scan that scans all ports rather than just the top 1000
-    `{ nmap 10.10.208.199 -p- }`
+    - `nmap 10.10.208.199 -p-`
 
 ```.sh
 PORT      STATE SERVICE
