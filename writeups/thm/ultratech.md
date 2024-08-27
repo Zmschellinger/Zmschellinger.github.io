@@ -23,7 +23,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
 ### Which software is using the port 8081?
 
 - To find this I did an nmap scan looking for the service and version (-sV) specificly on port 8081.
-- nmap -sV 10.10.208.199
+    - `nmap -sV 10.10.208.199`
 
 ```.sh
 PORT     STATE SERVICE VERSION
@@ -47,7 +47,7 @@ From this we can see that 31331 is the other non standard port running.
 
 ### Which software using this port?
 - To find this, I ran an nmap scan that looks for the service and version (-sV) on port 31331.
-- nmap -sV 10.10.208.199 -p 31331
+    - `nmap -sV 10.10.208.199 -p 31331`
 
 ```.sh
 PORT      STATE SERVICE VERSION
@@ -62,7 +62,7 @@ From this we can see that Apache is the software using this port.
 
 ### The software using the port 8081 is a RESTapi, how many of its routes are used by the web application?
 - To find this we can use an nmap scan that goes into more detail, -A.
-- nmap -A 10.10.208.199 -p 8081.
+    - `nmap -A 10.10.208.199 -p 8081`
 
 ```.sh
 PORT     STATE SERVICE VERSION
