@@ -79,6 +79,8 @@ From this we can see there are 2 Rest api's; _http-cors, and _http-title.
 ## Part 2 - Explotation
 
 ### There is a database lying around, what is its filename?
+- To start off, I opened my web browser and went to http://10.10.208.199:8081. The only thing to pop up is UltraTech API v0.1.3, which might be vulnerable. Im going to look at the other port before attempting to exploit this one.
+- When looking at http://10.10.208.199:31331, we find a  
 
 ### What is the first user's password hash?
 
