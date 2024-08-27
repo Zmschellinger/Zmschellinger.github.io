@@ -42,12 +42,6 @@ ls
 rm bomb.sh
 sudo nano /etc/crontab
 exit
-root@ip-10-10-28-147:/home/it-admin# cd ../../et/crontab
--bash: cd: ../../et/crontab: No such file or directory
-root@ip-10-10-28-147:/home/it-admin# cd ../../etc/crontab
--bash: cd: ../../etc/crontab: Not a directory
-root@ip-10-10-28-147:/home/it-admin# cd ../..
-root@ip-10-10-28-147:/# ls
 ```
 
 After finding out all of that information we can succesfuly close the incident! 
