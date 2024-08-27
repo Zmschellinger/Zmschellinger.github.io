@@ -103,11 +103,8 @@ Alvaro Squalo | Sq4l
 
 ### what is the password associated with this hash?
 
-
-
-<div style="color: red; padding: 20px; border-radius: 5px; color: white;">
-    <pre>
-        # Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
+<input type="text" style="color: red;" placeholder=
+    " # Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
         Nmap scan report for 192.168.1.1
         Host is up (0.0010s latency).
         Not shown: 999 closed ports
@@ -118,11 +115,9 @@ Alvaro Squalo | Sq4l
         Host is up (0.0020s latency).
         Not shown: 999 closed ports
         PORT     STATE SERVICE
-        53/tcp open  domain
-     </pre>
-</div>
+        53/tcp open  domain   
+    ">
 
-# this is updated
 
 
   
