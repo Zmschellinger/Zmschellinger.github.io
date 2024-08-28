@@ -6,7 +6,7 @@ The basics of pentration testing, enumeration, privlilege escaltion, and webapp 
 
 The first thing im going to do is run an nmap scan on the target IP address (10.10.208.199).
 
-```.sh
+<p><span style="color:green"><e
 Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-27 18:11 BST
 Nmap scan report for ip-10-10-208-199.eu-west-1.compute.internal (10.10.208.199)
 Host is up (0.00089s latency).
@@ -18,7 +18,8 @@ PORT     STATE SERVICE
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
-```
+</em></span></p>
+
 
 
 ### Which software is using the port 8081?
@@ -26,35 +27,38 @@ Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
 - To find this I did an nmap scan looking for the service and version (-sV) specificly on port 8081.
     - `nmap -sV 10.10.208.199`
 
-```.sh
+<p><span style="color:green"><e
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
-```
+</em></span></p>
+
 From this we can see that the software running is Node.js.
 
 ### Which other Non-standard port is used?
 - To find this, I ran an nmap scan that scans all ports rather than just the top 1000
     - `nmap 10.10.208.199 -p-`
 
-```.sh
+<p><span style="color:green"><e
 PORT      STATE SERVICE
 21/tcp    open  ftp
 22/tcp    open  ssh
 8081/tcp  open  blackice-icecap
 31331/tcp open  unknown
-```
+</em></span></p>
+
 From this we can see that 31331 is the other non standard port running.
 
 ### Which software using this port?
 - To find this, I ran an nmap scan that looks for the service and version (-sV) on port 31331.
     - `nmap -sV 10.10.208.199 -p 31331`
 
-```.sh
+<p><span style="color:green"><e
 PORT      STATE SERVICE VERSION
 31331/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
-```
+</em></span></p>
+
 From this we can see that Apache is the software using this port.
 
 ### Which GNU/Linux distribution seems to be used?
@@ -65,7 +69,7 @@ From this we can see that Apache is the software using this port.
 - To find this we can use an nmap scan that goes into more detail, -A.
     - `nmap -A 10.10.208.199 -p 8081`
 
-```.sh
+<p><span style="color:green"><e
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
 |_http-cors: HEAD GET POST PUT DELETE PATCH
@@ -81,7 +85,8 @@ Network Distance: 1 hop
 TRACEROUTE
 HOP RTT     ADDRESS
 1   0.56 ms ip-10-10-208-199.eu-west-1.compute.internal (10.10.208.199)
-```
+</em></span></p>
+
 From this we can see there are 2 Rest api's; _http-cors, and _http-title. 
 
 ## Part 2 - Explotation
@@ -92,46 +97,17 @@ From this we can see there are 2 Rest api's; _http-cors, and _http-title.
 - When looking at http://10.10.208.199:31331, we find a somewhat sophisticated looking webpage.
   Upon futher inspection on the Aboutus page we find a list of potential users
 
-```.sh
+<p><span style="color:green"><em>
 John McFamicom | r00t
 Francois LeMytho | P4c0
 Alvaro Squalo | Sq4l
-```
+</em></span></p>
+
 
 
 ### What is the first user's password hash?
 
 ### what is the password associated with this hash?
 
-<input type="text" style="color: red;" placeholder=
-    " # Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
-        Nmap scan report for 192.168.1.1
-        Host is up (0.0010s latency).
-        Not shown: 999 closed ports
-        PORT     STATE SERVICE
-        22/tcp open  ssh
-        80/tcp open  http
-        Nmap scan report for 192.168.1.2
-        Host is up (0.0020s latency).
-        Not shown: 999 closed ports
-        PORT     STATE SERVICE
-        53/tcp open  domain   
-    ">
-
-
-<p><span style="color:red"><em>
-# Nmap 7.80 scan initiated Fri Oct 20 12:00:00 2023 as: nmap -sP 192.168.1.0/24
-Nmap scan report for 192.168.1.1
-Host is up (0.0010s latency).
-Not shown: 999 closed ports
-PORT     STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
-Nmap scan report for 192.168.1.2
-Host is up (0.0020s latency).
-Not shown: 999 closed ports
-PORT     STATE SERVICE
-53/tcp open  domain
-</em></span></p>
   
 
