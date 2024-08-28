@@ -115,7 +115,7 @@ Alvaro Squalo | Sq4l
 
 - /partners.html seems interesting as it wasnt on the main page. Upon further invesigation we find that this is a login page. Looking into the .html code we find a custom written api file "api.js":
 
-```.js
+```.c#
 (function() {
     console.warn('Debugging ::');
 
