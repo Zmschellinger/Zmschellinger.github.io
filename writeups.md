@@ -14,6 +14,8 @@ permalink: /writeups
    ==).      \__________\
   (__)       ()__________)
 ```
+
+# August 2024
 1. [TryHackMe Wonderland](/writeups/thm/wonderland.md) - Pen testing, enum, Priv esc, WebApp
 2. [SOC Analyst Path](/writeups/htb/SOCanalystpath.md) - Basics of being a SOC analyst
 3. [Cyber Defense Framework](/writeups/thm/SOC1Path/CDF.md) - Basics of incident response 
