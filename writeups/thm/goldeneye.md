@@ -6,7 +6,7 @@ Medium CTF - James Bond themed.
 ### How many ports are open?
 
 To do this im going to conduct an nmap scan of all ports. 
-<p style="background-color:#666;">nmap 10.10.143.217 -p-`</p>
+<p style="color:Red;">nmap 10.10.143.217 -p-`</p>
 
 
 
