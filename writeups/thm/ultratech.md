@@ -25,8 +25,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
 ### Which software is using the port 8081?
 
 - To find this I did an nmap scan looking for the service and version (-sV) specificly on port 8081.
-    - <p><span style="color:red">nmap -sV 10.10.208.199</span></p>
-
+<p><span style="color:red">nmap -sV 10.10.208.199</span></p>
 <p><span style="color:green"><em>
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
@@ -37,8 +36,7 @@ From this we can see that the software running is Node.js.
 
 ### Which other Non-standard port is used?
 - To find this, I ran an nmap scan that scans all ports rather than just the top 1000
-    - `nmap 10.10.208.199 -p-`
-
+<p><span style="color:red">nmap 10.10.208.199 -p- </span></p>
 <p><span style="color:green"><em>
 PORT      STATE SERVICE
 21/tcp    open  ftp
@@ -51,8 +49,7 @@ From this we can see that 31331 is the other non standard port running.
 
 ### Which software using this port?
 - To find this, I ran an nmap scan that looks for the service and version (-sV) on port 31331.
-    - `nmap -sV 10.10.208.199 -p 31331`
-
+<p><span style="color:red">nmap -sV 10.10.208.199 -p 31331</span></p>
 <p><span style="color:green"><em>
 PORT      STATE SERVICE VERSION
 31331/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
@@ -67,8 +64,7 @@ From this we can see that Apache is the software using this port.
 
 ### The software using the port 8081 is a RESTapi, how many of its routes are used by the web application?
 - To find this we can use an nmap scan that goes into more detail, -A.
-    - `nmap -A 10.10.208.199 -p 8081`
-
+<p><span style="color:red">nmap -sV 10.10.208.199 -p 8081 </span></p>
 <p><span style="color:green"><em>
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
@@ -115,7 +111,7 @@ Alvaro Squalo | Sq4l
 
 - /partners.html seems interesting as it wasnt on the main page. Upon further invesigation we find that this is a login page. Looking into the .html code we find a custom written api file "api.js":
 
-```.js
+<p><span style="color:green"><em>
 (function() {
     console.warn('Debugging ::');
 
@@ -153,7 +149,8 @@ Alvaro Squalo | Sq4l
     form.action = `http://${getAPIURL()}/auth`;
     
 })();
-```
+</em></span></p>
+
 
 - Im relativly new to api's but by analyzing the code we see that the function getAPIURL returns the domain name of the web host port 8081. Then then function checkAPIStatus goes to the url http://10.10.90.74:8081/ping?ip=10.10.90.74 . Which might be worth looking into before moving forward.
 - After going to that web address, we can see that it returns the ping command. This looks like a form of remote code execution. Returned ping:
