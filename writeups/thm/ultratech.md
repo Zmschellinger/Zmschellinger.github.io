@@ -95,7 +95,7 @@ From this we can see there are 2 Rest api's; _http-cors, and _http-title.
 - To start off, I opened my web browser and went to http://10.10.208.199:8081. The only thing to pop up is
   UltraTech API v0.1.3, which might be vulnerable. Im going to look at the other port before attempting to exploit this one.
 - When looking at http://10.10.208.199:31331, we find a somewhat sophisticated looking webpage.
-  Upon futher inspection on the Aboutus page we find a list of potential users
+  Upon futher inspection on the Aboutus page we find a list of potential users.
 
 <p><span style="color:green"><em>
 John McFamicom | r00t
@@ -103,6 +103,57 @@ Francois LeMytho | P4c0
 Alvaro Squalo | Sq4l
 </em></span></p>
 
+-Continuing on, we find a contact page that throws a 404 error. it also shows that apache version 2.4.29 which might come in handy if that version is vulnerable. 
+- The next thing I look at is the robots.txt file, this leads me to /utech_sitemap.txt. Continuing to follow this path leads us to find.
+
+<p><span style="color:green"><em>
+/
+/index.html
+/what.html
+/partners.html
+</em></p>
+
+- /partners.html seems interesting as it wasnt on the main page. Upon further invesigation we find that this is a login page. Looking into the .html code we find a custom written api file "api.js":
+
+```.js
+(function() {
+    console.warn('Debugging ::');
+
+    function getAPIURL() {
+	return `${window.location.hostname}:8081`
+    }
+    
+    function checkAPIStatus() {
+	const req = new XMLHttpRequest();
+	try {
+	    const url = `http://${getAPIURL()}/ping?ip=${window.location.hostname}`
+	    req.open('GET', url, true);
+	    req.onload = function (e) {
+		if (req.readyState === 4) {
+		    if (req.status === 200) {
+			console.log('The api seems to be running')
+		    } else {
+			console.error(req.statusText);
+		    }
+		}
+	    };
+	    req.onerror = function (e) {
+		console.error(xhr.statusText);
+	    };
+	    req.send(null);
+	}
+	catch (e) {
+	    console.error(e)
+	    console.log('API Error');
+	}
+    }
+    checkAPIStatus()
+    const interval = setInterval(checkAPIStatus, 10000);
+    const form = document.querySelector('form')
+    form.action = `http://${getAPIURL()}/auth`;
+    
+})();
+```
 
 
 ### What is the first user's password hash?
