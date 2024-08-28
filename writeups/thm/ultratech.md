@@ -6,7 +6,7 @@ The basics of pentration testing, enumeration, privlilege escaltion, and webapp 
 
 The first thing im going to do is run an nmap scan on the target IP address (10.10.208.199).
 
-<p><span style="color:green"><e
+<p><span style="color:green"><em>
 Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-27 18:11 BST
 Nmap scan report for ip-10-10-208-199.eu-west-1.compute.internal (10.10.208.199)
 Host is up (0.00089s latency).
@@ -27,7 +27,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
 - To find this I did an nmap scan looking for the service and version (-sV) specificly on port 8081.
     - `nmap -sV 10.10.208.199`
 
-<p><span style="color:green"><e
+<p><span style="color:green"><em>
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
@@ -39,7 +39,7 @@ From this we can see that the software running is Node.js.
 - To find this, I ran an nmap scan that scans all ports rather than just the top 1000
     - `nmap 10.10.208.199 -p-`
 
-<p><span style="color:green"><e
+<p><span style="color:green"><em>
 PORT      STATE SERVICE
 21/tcp    open  ftp
 22/tcp    open  ssh
@@ -53,7 +53,7 @@ From this we can see that 31331 is the other non standard port running.
 - To find this, I ran an nmap scan that looks for the service and version (-sV) on port 31331.
     - `nmap -sV 10.10.208.199 -p 31331`
 
-<p><span style="color:green"><e
+<p><span style="color:green"><em>
 PORT      STATE SERVICE VERSION
 31331/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
 MAC Address: 02:3C:7E:9D:8D:85 (Unknown)
@@ -69,7 +69,7 @@ From this we can see that Apache is the software using this port.
 - To find this we can use an nmap scan that goes into more detail, -A.
     - `nmap -A 10.10.208.199 -p 8081`
 
-<p><span style="color:green"><e
+<p><span style="color:green"><em>
 PORT     STATE SERVICE VERSION
 8081/tcp open  http    Node.js Express framework
 |_http-cors: HEAD GET POST PUT DELETE PATCH
