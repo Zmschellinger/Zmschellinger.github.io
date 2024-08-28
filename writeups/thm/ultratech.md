@@ -114,11 +114,9 @@ Alvaro Squalo | Sq4l
 <p><span style="color:green"><em>
 (function() {
     console.warn('Debugging ::');
-
     function getAPIURL() {
 	return `${window.location.hostname}:8081`
     }
-    
     function checkAPIStatus() {
 	const req = new XMLHttpRequest();
 	try {
