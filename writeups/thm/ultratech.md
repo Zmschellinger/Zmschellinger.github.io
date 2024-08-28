@@ -6,7 +6,7 @@ The basics of pentration testing, enumeration, privlilege escaltion, and webapp 
 
 The first thing im going to do is run an nmap scan on the target IP address (10.10.208.199).
 
-<p><span style="color:gray"><em>
+<p><span style="color:#AAA"><em>
 Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-27 18:11 BST
 Nmap scan report for ip-10-10-208-199.eu-west-1.compute.internal (10.10.208.199)
 Host is up (0.00089s latency).
