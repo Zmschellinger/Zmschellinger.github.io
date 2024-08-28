@@ -164,7 +164,7 @@ PING 10.10.90.74 (10.10.90.74) 56(84) bytes of data. 64 bytes from 10.10.90.74: 
 	- http://10.10.90.74:8081/ping?ip=`pwd`, this is the output:
 <p><span style="color:green"><em>
 ping: /home/www/api: Temporary failure in name resolution 
-</em></p>
+</em></span></p>
 - We can see that our wokring directory is /home/www/api
 - Now we can start looking around and trying to find the database filename. 
 - The next command im going to run is a simple ls
