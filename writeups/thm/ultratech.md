@@ -111,7 +111,7 @@ Alvaro Squalo | Sq4l
 /index.html
 /what.html
 /partners.html
-</em></p>
+</em></span></p>
 
 - /partners.html seems interesting as it wasnt on the main page. Upon further invesigation we find that this is a login page. Looking into the .html code we find a custom written api file "api.js":
 
