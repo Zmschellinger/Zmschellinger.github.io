@@ -22,7 +22,4 @@ permalink: /writeups
 4. [Pyramid of Pain](/writeups/thm/SOC1Path/PoP.md) - Incident response, Cyber security basics
 5. [Disgruntled](/writeups/thm/disgruntled.md) - Digital forensics
 6. [UltraTech](/writeups/thm/ultratech.md) - Pen testing, Enum, Priv esc, WebApp
-7. 
-
-[7. [GoldenEye](/writeups/thm/goldeneye.md) - Pen testing, Enum, Priv esc, WebApp ]:
-   
+7. [Iron Shade](/writeups/thm/ironshade.md) - Pen testing, Enum, Priv esc, WebApp   
